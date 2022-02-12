@@ -1,0 +1,6 @@
+C:\Users\Asus\source\repos\CalculatorProject\CalculatorProject\bin\Debug\CalculatorProject.exe.config
+C:\Users\Asus\source\repos\CalculatorProject\CalculatorProject\bin\Debug\CalculatorProject.exe
+C:\Users\Asus\source\repos\CalculatorProject\CalculatorProject\bin\Debug\CalculatorProject.pdb
+C:\Users\Asus\source\repos\CalculatorProject\CalculatorProject\obj\Debug\CalculatorProject.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\CalculatorProject\CalculatorProject\obj\Debug\CalculatorProject.exe
+C:\Users\Asus\source\repos\CalculatorProject\CalculatorProject\obj\Debug\CalculatorProject.pdb
