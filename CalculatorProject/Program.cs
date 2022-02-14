@@ -19,9 +19,9 @@ namespace CalculatorProject
                 Calculator<double, double> calculator = new Calculator<double, double>(operation);
                 var result = calculator.Count(key, number1, number2);
                 Console.WriteLine($"result={result}");
+                History.Add(number1, number2, key, result);
                 Console.ReadKey();
-            }
-    
+            }   
         }
         public static IOperation GetOperation(ConsoleKey key)
         {

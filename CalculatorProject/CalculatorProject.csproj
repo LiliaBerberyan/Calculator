@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="DivideOperation.cs" />
+    <Compile Include="History.cs" />
     <Compile Include="IOperation.cs" />
     <Compile Include="MinusOperation.cs" />
     <Compile Include="MultiplyOperation.cs" />
