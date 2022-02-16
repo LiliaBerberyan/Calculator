@@ -6,22 +6,32 @@ namespace CalculatorProject
     {
         static void Main(string[] args)
         {
+            StartWork();
+        }
+        public static void StartWork()
+        {
+            Func<ConsoleKey, IOperation> operation = GetOperation;
+            ICalculatorCreator creator = new CalculatorCreater();
+            ICalculator calculator = creator.CreateCalculator(operation);
+            ConsoleOperations(calculator);
+        }
+        public static void ConsoleOperations(ICalculator calculator)
+        {
             Console.WriteLine("Calculator\nYou can do + - / * operations");
+
             while (true)
-            {    
+            {
                 Console.WriteLine("Write first number");
                 var number1 = int.Parse(Console.ReadLine());
                 Console.WriteLine("Write operation");
                 ConsoleKey key = Console.ReadKey().Key;
-                Func<ConsoleKey, IOperation> operation = GetOperation;
                 Console.WriteLine("\nWrite second number");
                 var number2 = int.Parse(Console.ReadLine());
-                Calculator<double, double> calculator = new Calculator<double, double>(operation);
-                var result = calculator.Count(key, number1, number2);
+                var result = calculator.Count<double, double>(key, number1, number2);
                 Console.WriteLine($"result={result}");
                 History.Add(number1, number2, key, result);
                 Console.ReadKey();
-            }   
+            }
         }
         public static IOperation GetOperation(ConsoleKey key)
         {

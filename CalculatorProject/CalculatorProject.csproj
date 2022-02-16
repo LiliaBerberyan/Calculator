@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculator.cs" />
+    <Compile Include="CalculatorCreater.cs" />
     <Compile Include="DivideOperation.cs" />
     <Compile Include="History.cs" />
+    <Compile Include="ICalculator.cs" />
+    <Compile Include="ICalculatorCreator.cs" />
     <Compile Include="IOperation.cs" />
     <Compile Include="MinusOperation.cs" />
     <Compile Include="MultiplyOperation.cs" />
